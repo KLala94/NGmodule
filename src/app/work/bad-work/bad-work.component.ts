@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
+import { AppRoutingModule } from '../../app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+import { WorkComponent } from '../../work/work.component';
+import { AppModule } from '../../app.module';
 
 @Component({
   selector: 'app-bad-work',
@@ -6,8 +10,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bad-work.component.scss']
 })
 export class BadWorkComponent implements OnInit {
+work:WorkComponent;
+constructor() {}
 
-  constructor() { }
 
   ngOnInit() {
   }

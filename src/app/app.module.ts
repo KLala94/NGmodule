@@ -9,14 +9,6 @@ import { GoodWorkComponent } from './work/good-work/good-work.component';
 import { BadWorkComponent } from './work/bad-work/bad-work.component';
 
 
-
-const appRoutes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'work', component: WorkComponent },
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  //{ path: '**', component: PageNotFoundComponent }
-];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,10 +20,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
