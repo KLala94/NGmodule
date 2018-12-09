@@ -11,7 +11,7 @@ import { WorkComponent } from './work/work.component';
 const appRoutes: Routes = [
   { path: 'app', component: AppComponent },
   { path: 'home', component: HomeComponent },
-
+  { path: 'work', component: WorkComponent },
   { path: '',   redirectTo: '/app', pathMatch: 'full' },
   //{ path: '**', component: PageNotFoundComponent }
 ];
