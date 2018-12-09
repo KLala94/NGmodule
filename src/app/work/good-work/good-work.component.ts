@@ -1,3 +1,4 @@
+import { NgModule }       from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { WorkComponent } from '../../work/work.component';
 import { AppModule } from '../../app.module';

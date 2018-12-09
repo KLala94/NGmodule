@@ -20,7 +20,7 @@ import { BadWorkComponent } from './work/bad-work/bad-work.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
