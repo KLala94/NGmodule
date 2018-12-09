@@ -5,14 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
+import { GoodWorkComponent } from './work/good-work/good-work.component';
+import { BadWorkComponent } from './work/bad-work/bad-work.component';
 
 
 
 const appRoutes: Routes = [
-  { path: 'app', component: AppComponent },
   { path: 'home', component: HomeComponent },
   { path: 'work', component: WorkComponent },
-  { path: '',   redirectTo: '/app', pathMatch: 'full' },
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
   //{ path: '**', component: PageNotFoundComponent }
 ];
 
@@ -20,7 +21,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    WorkComponent
+    WorkComponent,
+    GoodWorkComponent,
+    BadWorkComponent
   ],
   imports: [
     BrowserModule,
